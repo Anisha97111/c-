@@ -290,6 +290,9 @@ a={"apple","banana","cherry","apple","banana","mango"}
 print(a)
 print(len(a))
 
+a={1,2.0,3,"hlo",True,(1,2,3)}
+print(a)
+
 a={1,"hlo",2.4,True,(1,2,3)}
 print(a)
 print(type(a))
@@ -310,13 +313,170 @@ print(a1)
 a=tuple(a1)
 print(a)
 
+#empty set
+a=set()
+print(a)
+print(type(a))
+
+#dictionary
+a={}
+print(a)
+print(type(a))
+
+
+a={1,2,3,4,5}
+print(1 in a)
+print(6 not in a)
+
+#for loop in set
+number={1,2,3,4,5}
+for x in number:
+    print(x)
+
+ #add()=add an item to the set
+number={1,2,3,4,5}
+number.add(6)
+print(number)
+
+#concatenate two sets
+number={1,2,3,4,5}
+number1={6,7,8,9,10}
+number2=number.union(number1)
+print(number2)
+
+#add two sets using update()
+number={1,2,3,4,5}
+number1={6,7,8,9,10}
+number.update(number1)
+print(number)
+
+
+#add two different data types using update()
+number={1,2,3,4,5}
+number1=(6,7,8,9,10)
+number.update(number1)
+print(number)
+
+#remove()=remove the specified item
+number={1,2,3,4,5}
+number.remove(3)
+print(number)
+
+
+#discard()=remove the specified item
+number={1,2,3,4,5}
+number.discard(3)
+print(number)
+number.discard(6)
+print(number)
+
+#pop()=remove the specified index
+number={0,1,2,3,4,5}
+number.pop()
+print(number)
+
+#clear()=remove all the items from the set
+number={1,2,3,4,5}
+number.clear()
+print(number)
+
+
+#del()=delete the set
+number={1,2,3,4,5}
+del number
+
+#union()=return a set that contains all items from both sets
+number={1,2,3,4,5}
+number1={6,7,8,9,10}
+number2=number.union(number1)
+print(number2)
+
+
+#intersection()=return a set that contains only the items that are present in both sets
+number={1,2,3,4,5}
+number1={4,5,6,7,8}
+number2=number.intersection(number1)
+print(number2)
+
+#difference()=return a set that contains the items that are present in the first set but not in the second set
+number={1,2,3,4,5}
+number1={4,5,6,7,8}
+number2=number.difference(number1)
+print(number2)
+
+
+#symmetric_difference()=return a set that contains the items that are present in either set, but not in both
+number={1,2,3,4,5}
+number1={4,5,6,7,8}
+number2=number.symmetric_difference(number1)
+print(number2)
+
+
+#isdisjoint()=return True if both sets have no items in common, otherwise return False
+number={1,2,3,4,5}
+number1={6,7,8,9,10}
+number2=number.isdisjoint(number1)
+print(number2)
+
+#pop()=remove the specified index
+number={0,1,2,3,4,5}    
+print(number)
+number.pop()
+print(number)
+
+a={1,2,3,4,5}
+ai=tuple(a)
+print(ai)
+
+
+#update()=add the elements of a set (or any iterable), to the end of the current set
+number={1,2,3,4,5}
+number1={6,7,8,9,10}
+number.update(number1)
+print(number)
+
+a=[1,2,2,3,4]
+a1=set(a)
+print(a1)
+a=list(a1)
+print(a)
+
+email=["anishayadav@gmail.com","john.doe@gmail.com","jane.smith@gmail.com","anishayadav@gmail.com"]
+email1=set(email)
+print(email1)
 
 
 
+#dictionary
+#data type=key:value pair
+#key:value pair=keys are unique, values can be duplicate
+#values can be any data type, keys can be any immutable data type
+# student={}
+# print(student)
 
 
+# student={"name":"annu","age":21,"city":"hyderabad"}
+# print(student)
+
+# languages={"python":"programming language","c++":"programming language","english":"language"}
+# print(languages)
+# print(len(languages))
 
 
+# languages=dict()
+# print(type(languages))
+
+# student=dict( name="annu",age=21,city="hyderabad")
+# print(student)
+
+#tuple and list to dictionary
+# #tuple and list can be converted to dictionary using dict() function
+ #student=[("name","annu"),("age",21),("city","hyderabad")]
+ #print(student)
+ #student1=dict(student)
+ #print(student1)
 
 
-
+student=[("name","annu"),("age",21),("city","hyderabad")]
+student1=dict(student)
+print(student1)
