@@ -476,7 +476,60 @@ print(email1)
  #student1=dict(student)
  #print(student1)
 
-
+#list with different data types to dictionary
 student=[("name","annu"),("age",21),("city","hyderabad")]
 student1=dict(student)
 print(student1)
+
+#accessing keys in dictionary
+#use when you want to access the value of a key in a dictionary.
+#if the key does not exist, it raises a KeyError.
+student={"name":"annu","age":21,"city":"hyderabad"}
+print(student["name"])
+
+
+#get()=return the value of the specified key
+#use get() method to access the value of a key in a dictionary. 
+# If the key does not exist, it returns None instead of raising an error.
+student={"name":"annu","age":21,"city":"hyderabad"}
+print(student.get("name"))
+print(student.get("age","age  not found"))
+print(student.get("email"))
+print(student.get("email","email not found"))
+
+
+#update()=update the value of the specified key
+#use update() method to update the value of a key in a dictionary.
+student={"name":"annu","age":21,"city":"hyderabad"}
+print(student)
+student.update({"age": 22})
+print(student)
+student["email"]= "annu@gmail.com"
+print(student)
+student.update({"cource":"python","year":2024})
+print(student)
+
+
+#pop()=remove the specified key and return the corresponding value
+#use pop() method to remove a key-value pair from a dictionary.
+student={"name":"annu","age":21,"city":"hyderabad"}
+age=student.pop("age")
+print(student)
+
+#popitem()=remove the last inserted key-value pair and return it as a tuple
+#use popitem() method to remove the last inserted key-value pair from a dictionary.
+student={"name":"annu","age":21,"city":"hyderabad"}
+student1=student.popitem()
+print(student1)
+
+
+#dictonary methods
+#keys()=return a view object that displays a list of all the keys in the dictionary
+#values()=return a view object that displays a list of all the values in the dictionary
+#items()=return a view object that displays a list of all the key-value pairs in
+
+
+
+
+
+
