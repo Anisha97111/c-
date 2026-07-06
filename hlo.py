@@ -447,7 +447,11 @@ print(email1)
 
 
 
+
 #dictionary
+#use of dictionary is to store data values in key:value pairs.
+#syntax of dictionary
+#dictionary_name={key1:value1,key2:value2,key3:value3}
 #data type=key:value pair
 #key:value pair=keys are unique, values can be duplicate
 #values can be any data type, keys can be any immutable data type
@@ -530,6 +534,9 @@ print(student1)
 
 #remove()=remove the specified key-value pair from a dictionary
 #use remove() method to remove a key-value pair from a dictionary.
+#example:
+student={"name":"annu","age":21,"city":"hyderabad"}
+
 
 
 #dictonary methods
@@ -551,15 +558,29 @@ java={"akshu","anu","ashu","annu"}
 print(python.intersection(java))
 
 
+#.keys()=return a view object that displays a list of all the keys in the dictionary
+#.values()=return a view object that displays a list of all the values in the dictionary
+#.items()=return a view object that displays a list of all the key-value pairs in the dictionary
 
 
 
-
-
-
-
-
-
+student:{
+    "name":"annu",
+    "age":21,
+    "city":"hyderabad",
+    
+    "marks":{
+     "maths":90,
+     "science":85,
+     "english":95,
+    },
+    "course":{
+     "python":2024,
+     "java":2023,
+       },
+    }
+print(student)                                                        
+print(student.get("marks").get("hindi", "marks not found"))
 
 
 
