@@ -523,10 +523,46 @@ student1=student.popitem()
 print(student1)
 
 
+#discard()=remove the specified key-value pair from a dictionary
+#use discard() method to remove a key-value pair from a dictionary.
+# Note: discard() is typically used with sets, not dictionaries.
+
+
+#remove()=remove the specified key-value pair from a dictionary
+#use remove() method to remove a key-value pair from a dictionary.
+
+
 #dictonary methods
 #keys()=return a view object that displays a list of all the keys in the dictionary
 #values()=return a view object that displays a list of all the values in the dictionary
 #items()=return a view object that displays a list of all the key-value pairs in
+
+
+#nested dictionary
+#nested dictionary is a dictionary that contains another dictionary as a value.
+#example of nested dictionary
+student={"name":"annu","age":21,"city":"hyderabad","marks":{"maths":90,"science":85,"english":95}}
+print(student)
+print(student["marks"]["maths"])
+
+
+python={"annu","annyy","anisha"}
+java={"akshu","anu","ashu","annu"}
+print(python.intersection(java))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
